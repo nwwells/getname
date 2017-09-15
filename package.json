@@ -3,10 +3,17 @@
   "version": "0.9.0",
   "description": "gets a name from a list",
   "main": "index.js",
+  "bin": "index.js",
   "repository": "git://git@github.com/nwwells/getname",
   "author": "Nathan Wells <nwwells@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "xdg": "^0.1.1"
+  },
+  "devDependencies": {
+    "pkg": "^4.2.4"
+  },
+  "scripts": {
+    "build": "pkg --targets node8-linux-x64,node8-macos-x64 --out-path build ."
   }
 }
